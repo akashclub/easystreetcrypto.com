@@ -4,7 +4,7 @@ html,body{height:100%;margin:0;background:#0b0f14;color:#e8eaef;font-family:Inte
 a{color:inherit}
 /* Intro stage */
 .stage{position:fixed;inset:0;overflow:hidden}
-#bgvid{position:absolute;inset:0;min-width:100%;min-height:100%;object-fit:cover;filter:brightness(.6) contrast(1.1); background: url("./assets/poster.png") center center / cover no-repeat; width: 100vw;height: 100vh;}
+#bgvid{position:absolute;inset:0;min-width:100%;min-height:100%;object-fit:cover;filter:brightness(.6) contrast(1.1); background: url("./assets/poster.webp") center center / cover no-repeat; width: 100vw;height: 100vh;}
 .overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:6vh 24px;pointer-events:none}
 .h1{pointer-events:none;text-align:center;letter-spacing:.18em;font-weight:800;opacity:.92;text-transform:uppercase;font-size:clamp(16px,2.1vw,28px)}
 .kicker{pointer-events:none;text-align:center;opacity:.72;margin-top:6px;font-size:clamp(12px,1.2vw,14px)}
