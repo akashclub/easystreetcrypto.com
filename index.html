@@ -8,11 +8,15 @@
   <link rel="stylesheet" href="./assets/styles.css">
   <style>
     #bgvid {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    background: url("./assets/poster.png") center center / cover no-repeat;
-  }
+      background: url("./assets/poster.png") center center / cover no-repeat;
+    }
+    #enter {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    #enter.show {
+      opacity: 1;
+    }
   </style>
 </head>
 <body>
@@ -29,11 +33,17 @@
       </div>
       <div class="controls">
         <button id="sound" class="btn">Enable Sound</button>
-        <a id="enter" class="btn" href="home.html">Enter Site</a>
+        <a id="enter" class="btn" href="home.html" style="display:none;">Enter Site</a>
       </div>
     </div>
     <div class="footerHint">Tap “Enable Sound” to start audio. Then Enter.</div>
   </div>
   <script src="./assets/script.js"></script>
+  <script>
+  // Show the button after 40 seconds (40,000 ms)
+  setTimeout(() => {
+      document.getElementById("enter").classList.add("show");
+    }, 40000);
+</script>
 </body>
 </html>
