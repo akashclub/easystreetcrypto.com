@@ -2,7 +2,7 @@
 // Intro sound start (browser requires a gesture)
 const soundBtn = document.getElementById('sound');
 const enterBtn = document.getElementById('enter');
-const audio = new Audio('./assets/track.mp3'); // replace with your audio after upload
+const audio = new Audio('https://cdn.easystreetcrypto.com/track.mp3'); // replace with your audio after upload
 audio.loop = false;
 audio.preload = 'auto';
 
