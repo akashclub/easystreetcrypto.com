@@ -19,3 +19,7 @@ enterBtn?.addEventListener('click', async () => {
   document.body.style.opacity = 0;
   setTimeout(()=>{ window.location.href = 'home.html'; }, 250);
 });
+ // Show the button after 40 seconds (40,000 ms)
+setTimeout(() => {
+  document.getElementById("enter").classList.add("show");
+}, 40000);
